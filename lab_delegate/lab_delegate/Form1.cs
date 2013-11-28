@@ -16,5 +16,10 @@ namespace lab_delegate
         {
             InitializeComponent();
         }
+        //Comment
+        public void Foo(int x)
+        {
+            //Do something...
+        }
     }
 }
