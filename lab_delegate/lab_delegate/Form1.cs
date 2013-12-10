@@ -16,5 +16,27 @@ namespace lab_delegate
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            listBox1.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(textBox1.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1)
+          {
+              listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+          }
+        }
     }
+
+    class List
+        
+        public string name;
 }
